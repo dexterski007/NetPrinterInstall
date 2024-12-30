@@ -8,7 +8,7 @@ $ConfigFileName = "NetPrinterInstallConfig.xml"
 $Setup = $False
 #Check for config file presence
 If (Test-Path -Path $ConfigFileName) {
-    $Timeout = 5
+    $Timeout = 1
     $Sec = $Timeout
     While ( (-Not $Host.UI.RawUI.KeyAvailable) -And  ($Sec -gt 0 )) {
         Write-Host "Setup of the new printer will start in $($Sec) seconds."
@@ -153,7 +153,7 @@ If ($Setup) {
     Write-Host -ForeGroundColor Green "Configuration file written to $($ConfigFileName)."
     Write-Host ""
     Write-Host "Running this script again will install the printer automatically."
-    Start-Sleep -Seconds 5
+    Start-Sleep -Seconds 1
     Exit
 } Else {
     $AdminRights = ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")
@@ -206,5 +206,5 @@ If ($Setup) {
     }
     Write-Host ""
     Write-Host "Done. Closing in 5 seconds."
-    Start-Sleep -Seconds 5
+    Start-Sleep -Seconds 1
 }

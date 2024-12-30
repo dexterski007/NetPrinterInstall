@@ -1,0 +1,99 @@
+;
+; KONICA MINOLTA C554SeriesPCL Driver UNF-File for Win x64
+;
+; Copyright (C) 2003 KONICA MINOLTA, INC.
+
+[Version]
+Signature="$Windows NT$"
+Provider=%KM%
+ClassGUID={4D36E979-E325-11CE-BFC1-08002BE10318}
+Class=Printer
+CatalogFile.ntamd64=KOAYTJ__.CAT
+DriverVer=12/01/2018,5.4.0.0
+
+[DriverInfo]
+DriverName1=KONICA MINOLTA C554SeriesPCL
+DriverName2=KONICA MINOLTA C364SeriesPCL
+DriverCode=000C
+
+[Uninstall.DriverName1]
+DelReg=Environment_Reg.DriverName1
+DelFiles=KOAYT_COPY,PRINT_MONITOR,IMG_PP_FILES,IMG_DATA_FILES
+
+[Uninstall.DriverName2]
+DelReg=Environment_Reg.DriverName2
+DelFiles=KOAYT_COPY,PRINT_MONITOR,IMG_PP_FILES,IMG_DATA_FILES
+
+[Environment_Reg.DriverName1]
+HKLM,"System\CurrentControlSet\Control\Print\Printers","StartOnBoot"
+HKCU,"SoftWare\KONICA MINOLTA\KONICA MINOLTA C554SeriesPCL"
+
+[Environment_Reg.DriverName2]
+HKLM,"System\CurrentControlSet\Control\Print\Printers","StartOnBoot"
+HKCU,"SoftWare\KONICA MINOLTA\KONICA MINOLTA C364SeriesPCL"
+
+[KOAYT_COPY]
+KOAYTJ_B.DLL,,,1
+KOAYTJ_C.DLL,,,1
+KOAYTJ_D.DLL,,,1
+KOAYTJ_E.DLL,,,1
+KOAYTJ_F.DLL,,,1
+KOAYTJ_G.DLL,,,1
+KOAYTJ_J.DLL,,,1
+KOAYTJ_K.DLL,,,1
+KOAYTJ_M.DLL,,,1
+KOAYTJ_N.DLL,,,1
+KOAYTJ_O.DLL,,,1
+KOAYTJ_Q.DLL,,,1
+KOAYTJ_R.DLL,,,1
+KOAYTJ_S.DLL,,,1
+KOAYTJ_T.DLL,,,1
+KOAYTJ_U.DLL,,,1
+KOAYTJ_W.DLL,,,1
+KOAYTJ_X.DLL,,,1
+KOAYTJ_Y.DLL,,,1
+KOAYTJ_C.KPD
+KOAYTJ_D.KPD
+KOAYTJ_M.KPD
+KOAYTJ__.KPD
+KOAYTJ__.CHM,,,1
+KOAYTJ__.UNF
+KOAYTJ_A.KMP
+KOAYTJ_B.KMP
+KOAYTJ_C.KMP
+KOAYTJ_D.KMP
+KOAYTJ_E.KMP
+KOAYTJ_F.KMP
+KOAYTJ_G.KMP
+KOAYTJ_W.EXE,,,1
+KOAYTJ_F.fl
+KOAYTJ_J.ini
+
+[PRINT_MONITOR]
+KOAYTJ_L.DLL,,,1
+
+[IMG_PP_FILES]
+KOAYTJ_P.DLL,,,1
+
+[IMG_DATA_FILES]
+KOAYTJ__.cd
+KOAYTJ__.cg
+KOAYTJ__.cud
+KOAYTJ__.kd
+KOAYTJ__.kg
+KOAYTJ__.kud
+KOAYTJ__.md
+KOAYTJ__.mg
+KOAYTJ__.mud
+KOAYTJ__.yd
+KOAYTJ__.yg
+KOAYTJ__.yud
+
+[DestinationDirs]
+DefaultDestDir=66000
+PRINT_MONITOR=66002
+IMG_PP_FILES=66001
+
+[Strings]
+KM="KONICA MINOLTA"
+DiskName="KONICA MINOLTA C554Series Driver Disk"

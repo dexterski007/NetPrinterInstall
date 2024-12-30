@@ -1,0 +1,97 @@
+;
+; KONICA MINOLTA 750i PCL Driver UNF-File for Win
+;
+; Copyright (C) 2003 KONICA MINOLTA, INC.
+
+[Version]
+Signature="$Windows NT$"
+Provider=%KM%
+ClassGUID={4D36E979-E325-11CE-BFC1-08002BE10318}
+Class=Printer
+CatalogFile=KOAXHJ__.cat
+DriverVer=11/01/2019,2.1.13.0
+
+[DriverInfo]
+DriverName1=KONICA MINOLTA 750i PCL
+DriverName2=KONICA MINOLTA 650iSeriesPCL
+DriverName3=KONICA MINOLTA 306iSeriesPCL
+DriverName4=KONICA MINOLTA 4750iSeriesPCL
+DriverName5=KONICA MINOLTA 4700i PCL
+DriverCode=000C
+
+[Uninstall.DriverName1]
+DelReg=Environment_Reg.DriverName1
+DelFiles=KOAXH_COPY,PRINT_MONITOR
+
+[Uninstall.DriverName2]
+DelReg=Environment_Reg.DriverName2
+DelFiles=KOAXH_COPY,PRINT_MONITOR
+
+[Uninstall.DriverName3]
+DelReg=Environment_Reg.DriverName3
+DelFiles=KOAXH_COPY,PRINT_MONITOR
+
+[Uninstall.DriverName4]
+DelReg=Environment_Reg.DriverName4
+DelFiles=KOAXH_COPY,PRINT_MONITOR
+
+[Uninstall.DriverName5]
+DelReg=Environment_Reg.DriverName5
+DelFiles=KOAXH_COPY,PRINT_MONITOR
+
+[Environment_Reg.DriverName1]
+HKLM,"System\CurrentControlSet\Control\Print\Printers","StartOnBoot"
+HKCU,"SoftWare\KONICA MINOLTA\KONICA MINOLTA 750i PCL"
+
+[Environment_Reg.DriverName2]
+HKLM,"System\CurrentControlSet\Control\Print\Printers","StartOnBoot"
+HKCU,"SoftWare\KONICA MINOLTA\KONICA MINOLTA 650iSeriesPCL"
+
+[Environment_Reg.DriverName3]
+HKLM,"System\CurrentControlSet\Control\Print\Printers","StartOnBoot"
+HKCU,"SoftWare\KONICA MINOLTA\KONICA MINOLTA 306iSeriesPCL"
+
+[Environment_Reg.DriverName4]
+HKLM,"System\CurrentControlSet\Control\Print\Printers","StartOnBoot"
+HKCU,"SoftWare\KONICA MINOLTA\KONICA MINOLTA 4750iSeriesPCL"
+
+[Environment_Reg.DriverName5]
+HKLM,"System\CurrentControlSet\Control\Print\Printers","StartOnBoot"
+HKCU,"SoftWare\KONICA MINOLTA\KONICA MINOLTA 4700i PCL"
+
+[KOAXH_COPY]
+KOAXHJ_B.dll,,,1
+KOAXHJ_C.dll,,,1
+KOAXHJ_D.dll,,,1
+KOAXHJ_E.dll,,,1
+KOAXHJ_F.dll,,,1
+KOAXHJ_G.dll,,,1
+KOAXHJ_J.dll,,,1
+KOAXHJ_M.dll,,,1
+KOAXHJ_N.dll,,,1
+KOAXHJ_O.dll,,,1
+KOAXHJ_R.dll,,,1
+KOAXHJ_S.dll,,,1
+KOAXHJ_U.dll,,,1
+KOAXHJ_W.dll,,,1
+KOAXHJ_X.dll,,,1
+KOAXHJ_C.kpd,,,1
+KOAXHJ_D.kpd,,,1
+KOAXHJ_M.kpd,,,1
+KOAXHJ__.kpd,,,1
+KOAXHJ__.chm,,,1
+KOAXHJ__.unf,,,1
+KOAXHJ_A.kmp,,,1
+KOAXHJ_B.kmp,,,1
+KOAXHJ_C.kmp,,,1
+
+[PRINT_MONITOR]
+KOAXHJ_L.dll,,,1
+
+[DestinationDirs]
+DefaultDestDir=66000
+PRINT_MONITOR=66002
+
+[Strings]
+KM="KONICA MINOLTA"
+DiskName="KONICA MINOLTA 750i Driver Disk"

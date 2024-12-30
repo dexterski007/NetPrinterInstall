@@ -1,0 +1,125 @@
+;
+; KONICA MINOLTA C750i PCL Driver UNF-File for Win
+;
+; Copyright (C) 2003 KONICA MINOLTA, INC.
+
+[Version]
+Signature="$Windows NT$"
+Provider=%KM%
+ClassGUID={4D36E979-E325-11CE-BFC1-08002BE10318}
+Class=Printer
+CatalogFile=KOAXCJ__.cat
+DriverVer=02/01/2021,3.1.12.0
+
+[DriverInfo]
+DriverName1=KONICA MINOLTA C650iSeriesPCL
+DriverName2=KONICA MINOLTA C360iSeriesPCL
+DriverName3=KONICA MINOLTA C4050iSeriesPCL
+DriverName4=KONICA MINOLTA C4000iSeriesPCL
+DriverName5=KONICA MINOLTA C3320i PCL
+DriverName6=KONICA MINOLTA C750i PCL
+DriverName7=KONICA MINOLTA C287iSeriesPCL
+DriverName8=KONICA MINOLTA C286iSeriesPCL
+DriverCode=000C
+
+[Uninstall.DriverName1]
+DelReg=Environment_Reg.DriverName1
+DelFiles=KOAXC_COPY,PRINT_MONITOR
+
+[Uninstall.DriverName2]
+DelReg=Environment_Reg.DriverName2
+DelFiles=KOAXC_COPY,PRINT_MONITOR
+
+[Uninstall.DriverName3]
+DelReg=Environment_Reg.DriverName3
+DelFiles=KOAXC_COPY,PRINT_MONITOR
+
+[Uninstall.DriverName4]
+DelReg=Environment_Reg.DriverName4
+DelFiles=KOAXC_COPY,PRINT_MONITOR
+
+[Uninstall.DriverName5]
+DelReg=Environment_Reg.DriverName5
+DelFiles=KOAXC_COPY,PRINT_MONITOR
+
+[Uninstall.DriverName6]
+DelReg=Environment_Reg.DriverName6
+DelFiles=KOAXC_COPY,PRINT_MONITOR
+
+[Uninstall.DriverName7]
+DelReg=Environment_Reg.DriverName7
+DelFiles=KOAXC_COPY,PRINT_MONITOR
+
+[Uninstall.DriverName8]
+DelReg=Environment_Reg.DriverName8
+DelFiles=KOAXC_COPY,PRINT_MONITOR
+
+[Environment_Reg.DriverName1]
+HKLM,"System\CurrentControlSet\Control\Print\Printers","StartOnBoot"
+HKCU,"SoftWare\KONICA MINOLTA\KONICA MINOLTA C650iSeriesPCL"
+
+[Environment_Reg.DriverName2]
+HKLM,"System\CurrentControlSet\Control\Print\Printers","StartOnBoot"
+HKCU,"SoftWare\KONICA MINOLTA\KONICA MINOLTA C360iSeriesPCL"
+
+[Environment_Reg.DriverName3]
+HKLM,"System\CurrentControlSet\Control\Print\Printers","StartOnBoot"
+HKCU,"SoftWare\KONICA MINOLTA\KONICA MINOLTA C4050iSeriesPCL"
+
+[Environment_Reg.DriverName4]
+HKLM,"System\CurrentControlSet\Control\Print\Printers","StartOnBoot"
+HKCU,"SoftWare\KONICA MINOLTA\KONICA MINOLTA C4000iSeriesPCL"
+
+[Environment_Reg.DriverName5]
+HKLM,"System\CurrentControlSet\Control\Print\Printers","StartOnBoot"
+HKCU,"SoftWare\KONICA MINOLTA\KONICA MINOLTA C3320i PCL"
+
+[Environment_Reg.DriverName6]
+HKLM,"System\CurrentControlSet\Control\Print\Printers","StartOnBoot"
+HKCU,"SoftWare\KONICA MINOLTA\KONICA MINOLTA C750i PCL"
+
+[Environment_Reg.DriverName7]
+HKLM,"System\CurrentControlSet\Control\Print\Printers","StartOnBoot"
+HKCU,"SoftWare\KONICA MINOLTA\KONICA MINOLTA C287iSeriesPCL"
+
+[Environment_Reg.DriverName8]
+HKLM,"System\CurrentControlSet\Control\Print\Printers","StartOnBoot"
+HKCU,"SoftWare\KONICA MINOLTA\KONICA MINOLTA C286iSeriesPCL"
+
+[KOAXC_COPY]
+KOAXCJ_B.dll,,,1
+KOAXCJ_C.dll,,,1
+KOAXCJ_D.dll,,,1
+KOAXCJ_E.dll,,,1
+KOAXCJ_F.dll,,,1
+KOAXCJ_G.dll,,,1
+KOAXCJ_J.dll,,,1
+KOAXCJ_M.dll,,,1
+KOAXCJ_N.dll,,,1
+KOAXCJ_O.dll,,,1
+KOAXCJ_R.dll,,,1
+KOAXCJ_S.dll,,,1
+KOAXCJ_U.dll,,,1
+KOAXCJ_W.dll,,,1
+KOAXCJ_X.dll,,,1
+KOAXCJ_C.kpd,,,1
+KOAXCJ_D.kpd,,,1
+KOAXCJ_M.kpd,,,1
+KOAXCJ__.kpd,,,1
+KOAXCJ__.chm,,,1
+KOAXCJ__.unf,,,1
+KOAXCJ_A.kmp,,,1
+KOAXCJ_B.kmp,,,1
+KOAXCJ_C.kmp,,,1
+KOAXCJ_D.kmp,,,1
+
+[PRINT_MONITOR]
+KOAXCJ_L.dll,,,1
+
+[DestinationDirs]
+DefaultDestDir=66000
+PRINT_MONITOR=66002
+
+[Strings]
+KM="KONICA MINOLTA"
+DiskName="KONICA MINOLTA C750i Driver Disk"

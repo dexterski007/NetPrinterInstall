@@ -1,0 +1,98 @@
+;
+; KONICA MINOLTA 658eSeriesPCL Driver UNF-File for Win x86
+;
+; Copyright (C) 2003 KONICA MINOLTA, INC.
+;
+
+[Version]
+Signature="$Windows NT$"
+Provider=%KM%
+ClassGUID={4D36E979-E325-11CE-BFC1-08002BE10318}
+Class=Printer
+CatalogFile=KOAXOJ__.CAT
+DriverVer=12/01/2018,11.2.0.0
+
+[DriverInfo]
+DriverName1=KONICA MINOLTA 958SeriesPCL
+DriverName2=KONICA MINOLTA 558SeriesPCL
+DriverName3=KONICA MINOLTA 368SeriesPCL
+DriverName4=KONICA MINOLTA 367SeriesPCL
+DriverName6=KONICA MINOLTA 658eSeriesPCL
+DriverCode=000C
+
+[Uninstall.DriverName1]
+DelReg=Environment_Reg.DriverName1
+DelFiles=KOAXO_COPY,PRINT_MONITOR
+
+[Uninstall.DriverName2]
+DelReg=Environment_Reg.DriverName2
+DelFiles=KOAXO_COPY,PRINT_MONITOR
+
+[Uninstall.DriverName3]
+DelReg=Environment_Reg.DriverName3
+DelFiles=KOAXO_COPY,PRINT_MONITOR
+
+[Uninstall.DriverName4]
+DelReg=Environment_Reg.DriverName4
+DelFiles=KOAXO_COPY,PRINT_MONITOR
+
+[Uninstall.DriverName6]
+DelReg=Environment_Reg.DriverName6
+DelFiles=KOAXO_COPY,PRINT_MONITOR
+
+[Environment_Reg.DriverName1]
+HKLM,"System\CurrentControlSet\Control\Print\Printers","StartOnBoot"
+HKCU,"SoftWare\KONICA MINOLTA\KONICA MINOLTA 958SeriesPCL"
+
+[Environment_Reg.DriverName2]
+HKLM,"System\CurrentControlSet\Control\Print\Printers","StartOnBoot"
+HKCU,"SoftWare\KONICA MINOLTA\KONICA MINOLTA 558SeriesPCL"
+
+[Environment_Reg.DriverName3]
+HKLM,"System\CurrentControlSet\Control\Print\Printers","StartOnBoot"
+HKCU,"SoftWare\KONICA MINOLTA\KONICA MINOLTA 368SeriesPCL"
+
+[Environment_Reg.DriverName4]
+HKLM,"System\CurrentControlSet\Control\Print\Printers","StartOnBoot"
+HKCU,"SoftWare\KONICA MINOLTA\KONICA MINOLTA 367SeriesPCL"
+
+[Environment_Reg.DriverName6]
+HKLM,"System\CurrentControlSet\Control\Print\Printers","StartOnBoot"
+HKCU,"SoftWare\KONICA MINOLTA\KONICA MINOLTA 658eSeriesPCL"
+
+[KOAXO_COPY]
+KOAXOJ_B.DLL,,,1
+KOAXOJ_C.DLL,,,1
+KOAXOJ_D.DLL,,,1
+KOAXOJ_E.DLL,,,1
+KOAXOJ_F.DLL,,,1
+KOAXOJ_G.DLL,,,1
+KOAXOJ_J.DLL,,,1
+KOAXOJ_M.DLL,,,1
+KOAXOJ_N.DLL,,,1
+KOAXOJ_O.DLL,,,1
+KOAXOJ_R.DLL,,,1
+KOAXOJ_S.DLL,,,1
+KOAXOJ_U.DLL,,,1
+KOAXOJ_W.DLL,,,1
+KOAXOJ_X.DLL,,,1
+KOAXOJ_C.KPD
+KOAXOJ_D.KPD
+KOAXOJ_M.KPD
+KOAXOJ__.KPD
+KOAXOJ__.CHM,,,1
+KOAXOJ__.UNF
+KOAXOJ_A.KMP
+KOAXOJ_B.KMP
+KOAXOJ_C.KMP
+
+[PRINT_MONITOR]
+KOAXOJ_L.DLL,,,1
+
+[DestinationDirs]
+DefaultDestDir=66000
+PRINT_MONITOR=66002
+
+[Strings]
+KM="KONICA MINOLTA"
+DiskName="KONICA MINOLTA 658eSeries Driver Disk"
